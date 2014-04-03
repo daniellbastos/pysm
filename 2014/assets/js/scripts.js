@@ -1,4 +1,3 @@
-
 jQuery(document).ready(function() {
 
     /*
@@ -47,7 +46,7 @@ jQuery(document).ready(function() {
     /*
         Tooltips
     */
-    // $('.social a.facebook').tooltip();
+    $('.map-unifra').tooltip();
     // $('.social a.twitter').tooltip();
     // $('.social a.dribbble').tooltip();
     // $('.social a.googleplus').tooltip();
