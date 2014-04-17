@@ -1,108 +1,403 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Python Day Santa Maria - PySM</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="">
-
-        <!-- CSS -->
-        <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato:400,700'>
-        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-		<link rel="stylesheet" type="text/css" href="assets/js/fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
-        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-    </head>
-
-    <body>
-
-        <!-- Header -->
-        <div class="container">
-            <div class="header row">
-                <div class="logo span4">
-                    <h1><a href="">Python Day</a> <span>SM</span></h1>
-                </div>
-                <div class="call-us span8">
-                	<p>E-mail: <span>contato@pysm.org</span></p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Coming Soon -->
-        <div class="coming-soon">
-            <div class="inner-bg">
-                <div class="container">
-                    <div class="row">
-                        <div class="span12">
-                            <h2>Python Day Santa Maria</h2>
-                            <p>Um dia inteiro de palestras e minicursos sobre a linguagem de programação Python!</p>
-                            <p>
-<<<<<<< HEAD
-                                O evento será realizado no dia <span class="blue">03/05/2014</span> no <br />
-=======
-                                O evente será realizadi no dia <span class="blue">03/05/2014</span> no <br />
->>>>>>> 5e2f7ecea2446951308fb918147aa6553d8a2a40
-                                <a href="https://maps.google.com.br/maps?q=-29.684534,-53.814625&num=1&t=m&z=18" data-placement="top" data-original-title="Confira no mapa" class="map-unifra" target="_blank">Centro Universitário Franciscano (UNIFRA)</a>
-                            </p>
-                            <div class="timer">
-                                <div class="days-wrapper">
-                                    <span class="days"></span> <br>dias
-                                </div>
-                                <div class="hours-wrapper">
-                                    <span class="hours"></span> <br>horas
-                                </div>
-                                <div class="minutes-wrapper">
-                                    <span class="minutes"></span> <br>minutos
-                                </div>
-                                <div class="seconds-wrapper">
-                                    <span class="seconds"></span> <br>segundos
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Content -->
-        <div class="container">
-            <div class="row">
-                <div class="span12 subscribe">
-                    <h3>Em breve a programação completa</h3>
-                    <p><a href="https://docs.google.com/forms/d/13ljh_HydLZf5N_XZFgV2s6FFVkVPNJBflwNSKX2aLEY/viewform" class="iframe" >Submeta sua palestra!</a></p>
-                </div>
-            </div>
-            <div class="row" style="margin-top:50px">
-                <div class="span12 subscribe">
-                    <h3>Apoio</h3>
-                    <a style="float:left;margin-left:200px" target="_blank" href="http://www.unifra.br/"><img src="pythonday/images/apoio/unifra.png"></a> 
-                    <a style="float:right;margin-right:200px" target="_blank" href="http://www.novatec.com.br/"><img src="pythonday/images/apoio/novatec.png"></a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Javascript -->
-        <script src="assets/js/jquery-1.8.2.min.js"></script>
-        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-        <script src="assets/js/jquery.backstretch.min.js"></script>
-        <script src="assets/js/jquery.countdown.js"></script>
-        <script src="assets/js/fancybox.js"></script>
-        <script src="assets/js/scripts.js"></script>
-		<script type="text/javascript" src="assets/js/fancybox/jquery.fancybox.js?v=2.1.5"></script>
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-            ga('create', 'UA-49662634-1', 'pysm.org');
-            ga('send', 'pageview');
+<!DOCTYPE HTML>
+<!--
+	Miniport 2.0 by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Python Day Santa Maria - PySM</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/config.js"></script>
+		<script src="js/skel.min.js"></script>
+        <script src="js/jquery.simplemodal.js"></script>
+        <script src="js/scripts.js"></script>
         </script>
-    </body>
+        <link rel="stylesheet" href="css/basic.css" />
+	
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+			<link rel="stylesheet" href="css/basic.css" />
+			<link rel="stylesheet" href="css/custom.css" />
+		</noscript>
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+		<!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" /><![endif]-->
+	</head>
+	<body>
 
+
+		<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li><a href="#top">Python Day - SM </a></li>
+					<li><a href="#palestrantes">Palestrantes</a></li>
+					<li><a href="#programacao">Programação</a></li>
+					<li><a href="#inscricoes">Inscrições</a></li>
+					<li><a href="#patrocinadores">Apoio</a></li>
+					<li><a href="#local">Local</a></li>
+				</ul>
+			</nav>
+
+		<!-- Home -->
+			<div class="wrapper wrapper-style1 wrapper-first">
+				<article class="container" id="top">
+					<div class="row">
+						<div class="12u">
+							<span class="image image-centered"><img src="images/logo.png" alt="" /></span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="12u action-call">	
+							
+							<header>
+								<h2>Um dia inteiro de palestras sobre a linguagem de programação que mais cresce no mundo</h2>
+							</header>
+                            <p><b>Sábado, 03 de maio de 2014</b> &bull; 8h00 às 17h &bull; <a href="#local">UNIFRA</a></p>							
+							<a href="#inscricoes" class="button button-big">Faça sua inscrição</a>
+						</div>
+					</div>					
+				</article>
+			</div>
+
+		<!-- Palestrantes -->
+			<div class="wrapper wrapper-style2">
+				<article id="palestrantes">
+					<header>
+						<h2>Palestrantes</h2>
+					</header>
+					<div class="container">
+						<div class="row">
+							<div class="4u">
+								<section class="box box-style2">
+									<h3>Daniel Michelon De Carli</h3>
+									<p class="nome-palestrante trigger-modal">Minicurrículo</p>
+									<div class=" modal">
+
+										É estudante de Desenho Industrial - Projeto de Produto na UFSM. Também é formado em Ciência da Computação - graduação sanduíche Fachhochschule Gelsenkirchen-UFSM, com mestrado na área de Computação Gráfica, também pela UFSM. Atua profissionalmente como analista de TI na mesma instituição, desenvolvendo aplicativos Django/Python para gestão interna. 
+									</div>
+									<hr>
+                                    <h4><a href="#programacao">
+                                    	Python sob a ótica de um estudante de Design
+                                    </a></h4>
+								</section>
+							</div>
+							<div class="4u">
+								<section class="box box-style2">
+									<h3>Henrique Leal</h3>
+									<p class="nome-palestrante trigger-modal">Minicurrículo</p>
+									<div class=" modal">
+										<a href="https://twitter.com/hmleal">https://twitter.com/hmleal</a> | 
+										<a href="https://github.com/hmleal">https://github.com/hmleal</a>
+										<br />
+										Apaixonado por Web, Linux, Software Livre e metodológias ágeis, atualmente trabalha com Python/Django. Programador da @beagle_ship e Acadêmico de sist. de informação =)
+									</div>
+									<hr>
+                                    <h4><a href="#programacao">
+                                    	Welcome to the Django
+                                    </a></h4>
+								</section>
+							</div>
+							<div class="4u">
+								<section class="box box-style2">
+									<h3>Leandro Nunes</h3>
+									<p class="nome-palestrante trigger-modal">Minicurrículo</p>
+									<div class=" modal">
+										<a href="http://twitter.com/leandron">http://twitter.com/leandron</a> | <a href="http://codefi.sh">http://codefi.sh</a><br />
+										Leandro possui graduação em Ciência da Computação e mestrado em Microeletrônica. Palestrante em diversos eventos de software livre tais como o Fórum Internacional de Software Livre e Tchêlinux. Atualmente trabalha como desenvolvedor em uma empresa multinacional de hardware e software utilizando Python como principal linguagem de programação.
+									</div>
+									<hr>
+                                    <h4><a href="#programacao">
+                                    	Python e Arduino
+                                    </a></h4>
+								</section>
+							</div>
+						</div>
+						<div class="row">
+							<div class="4u">
+								<section class="box box-style2">
+									<h3>Henrique Pereira</h3>
+									<p class="nome-palestrante trigger-modal">Minicurrículo</p>
+									<div class=" modal">
+										<a href="http://br.linkedin.com/in/ikkebr">http://br.linkedin.com/in/ikkebr</a> | <a href="http://twitter.com/ikkebr">http://twitter.com/ikkebr</a><br />
+										Bacharel em Sistemas de Informação pela UNIFRA e Mestre em Ciência da Computação pela UFSM. Trabalha como professor assistente no Centro Universitário Franciscano e como Analista de Tecnologia da Informação na Universidade Federal de Santa Maria. As principais áreas de interesse e pesquisa são a computação pervasiva e o desenvolvimento web. Atua como programador Python desde 2007 e utiliza o framework Django para desenvolvimento web desde 2009. É membro da ACM e entusiasta do software livre, tendo dado várias palestras em eventos internacionais de software livre como o FISL e o Latinoware.
+									</div>
+									<hr>
+                                    <h4><a href="#programacao">
+                                    	Site da UFSM - O mundo a 700 requisições por segundo
+                                    </a></h4>
+								</section>
+							</div>
+							<div class="4u">
+								<section class="box box-style2">
+									<h3>Joelmir Ribacki</h3>
+									<p class="nome-palestrante trigger-modal">Minicurrículo</p>
+									<div class=" modal">
+										<a href="http://br.linkedin.com/pub/joelmir-ribacki/31/496/307">http://br.linkedin.com/pub/joelmir-ribacki/31/496/307</a> | <a href="http://www.vendabem.com.br/">http://www.vendabem.com.br/</a><br />
+										Cursando Bacharel em Ciência da Computação ( ultimos semestres ), trabalhou com desenvolvimento em Oracle, .NET e Ruby on Rails. conhecimentos em Android e a 4 anos trabalhando com desenvolvimento do software.
+										<br/>Participante do grupo Tchêlinux desde 2009 e entusiasta Python desde então.
+									</div>
+									<hr>
+                                    <h4><a href="#programacao">
+                                    	Porque Python é legal :D
+                                    </a></h4>
+								</section>
+							</div>
+							<div class="4u">
+								<section class="box box-style2">
+									<h3>Guilherme Schvarcz Franco</h3>
+									<p class="nome-palestrante trigger-modal">Minicurrículo</p>
+									<div class=" modal">
+										<a href="https://www.facebook.com/guilherme.schvarczfranco">https://www.facebook.com/guilherme.schvarczfranco</a> | 
+										<a href="https://www.youtube.com/user/SchvarczFranco/videos">https://www.youtube.com/user/SchvarczFranco/videos</a>
+										<br />
+										Aquele tipo de cara que sabe a honra do código bem identado e viver pela linhas de código
+										<br/>Bacharel de Sistemas pela UNIFRA
+										<br/>Mestrando em Robótica pela UFRGS
+										<br/>Viciado em PDI pela vida!
+									</div>
+									<hr>
+                                    <h4><a href="#programacao">
+                                    	Python na robótica
+                                    </a></h4>
+								</section>
+							</div>
+						</div>
+						<div class="row">
+							<div class="4u">
+								<section class="box box-style2">
+									<h3>Matheus Pereira</h3>
+									<p class="nome-palestrante trigger-modal">Minicurrículo</p>
+									<div class=" modal">
+										<a href="http://matheper.com">http://matheper.com</a>
+										<br />
+										Bacharel em Ciência da Computação pela UCS - Universidade de Caxias do Sul.
+										<br />Professor - FTEC Caxias do Sul.
+										<br />Programador desde 2007, trabalho como pesquisador e desenvolvedor web na empresa Hadi.com e no Instituto Communitas para o Desenvolvimento Humano e Tecnológico.
+										<br />Organizador voluntário TcheLinux Caxias do Sul 2013.
+										<br />Palestras TcheLinux Caxias do Sul 2013, TcheLinux Porto Alegre 2013 e, daqui alguns dias, FISL.
+									</div>
+									<hr>
+                                    <h4><a href="#programacao">
+                                    	Mantendo seu Tempo a salvo com Python e Git
+                                    </a></h4>
+								</section>
+							</div>
+						</div>
+				</article>
+			</div>
+
+		<!-- Programação -->
+			<div class="wrapper wrapper-style3">
+				<article id="programacao">
+					<header>
+						<h2>Programação</h2>
+					</header>
+					<div class="container">
+						<div class="row">
+							<div class="12u">
+								<table class="table">									
+									<tbody>
+										<tr>
+											<td><strong>08:00</strong></td>
+											<td>
+												<a href="#programacao">Recepção e credenciamento</a>
+											</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td><strong>08:30</strong></td>
+											<td>
+												<a href="#" class="trigger-modal">Python sob a ótica de um estudante de Design</a>
+												<div class="modal">O que torna Python uma linguagem com bom Design a nível do programador.</div>
+											</td>
+											<td>Daniel Carli</td>
+										</tr>
+										<tr>
+											<td><strong>09:00</strong></td>
+											<td>
+												<a href="#" class="trigger-modal">Site da UFSM - O mundo a 700 requisições por segundo</a>
+												<div class="modal">Essa palestra tem o objetivo de falar sobre o processo de produção e desenvolvimento do novo site da UFSM e de como a linguagem de programação Python e o framework para web Django, em conjunto com outras tecnologias livre, tornaram isso possível. </div>
+											</td>
+											<td>Henrique Pereira</td>
+										</tr>
+										<tr>
+											<td><strong>10:00</strong></td>
+											<td>
+												<a href="#" class="trigger-modal">Python e Arduino</a>
+												<div class="modal">Essa palestra irá apresentar os conceitos básicos sobre o projeto Arduino e sua integração com a linguagem Python. Gostaria de ter a disposição um projeto e link de internet (se possivel sem proxy).</div>
+											</td>
+											<td>Leandro Nunes</td>
+										</tr>
+										<tr>
+											<td><strong>11:00</strong></td>
+											<td>
+												<a href="#" class="trigger-modal">Welcome to the Django</a>
+												<div class="modal">Palestra com finalidade de apresentar o Django como proposta para desenvolvimento de aplicações web. Apresentar os principais recursos do framework e como configurar um ambiente saudável de programação.</div>
+											</td>
+											<td>Henrique Leal</td>
+										</tr>
+										<tr>
+											<td><strong>12:00</strong></td>
+											<td>
+												<strong>Intervalo do Almoço</strong>
+											</td>
+											<td>
+											</td>
+										</tr>
+										<tr>
+											<td><strong>13:00</strong></td>
+											<td>
+												<a href="#" class="trigger-modal">Python na robótica</a>
+												<div class="modal">Aguardando dados</div>
+											</td>
+											<td>Guilherme Franco</td>
+										</tr>
+										<tr>
+											<td><strong>14:00</strong></td>
+											<td>
+												<a href="#" class="trigger-modal">Mantendo seu Tempo a salvo com Python e Git</a>
+												<div class="modal">A linguagem de programação Python está entre as 10 mais utilizadas no desenvolvimento de software. Multiplataforma, de fácil aprendizagem e alta produtividade, Python torna-se cada dia mais popular.
+
+													A sintaxe simples e limpa torna Python fácil de compreender e trabalhar, sendo ideal para ciclos de desenvolvimento rápido exigidos nos dias atuais. Muitas estimativas sugerem que é 5 a 10 vezes mais rápido desenvolver uma aplicação em Python do que em Java, e a diferença é ainda maior quando comparado com C e C++.
+
+													Git é um Sistema de Controle de Versão (SCM) distribuído voltado à atender todo tipo de necessidade, desde pequenos a grandes projetos, de forma rápida e eficiente. Ao utilizar Git um histórico de modificações é mantido, o trabalho é organizado e, consequentemente, a velocidade de desenvolvimento é incrementada.
+
+													Individualmente Python e Git são excelentes ferramentas de trabalho, porém, quando utilizadas em conjunto, maximizam a produtividade, reduzindo o tempo necessário para o desenvolvimento de software.
+
+													O objetivo da palestra é apresentar Python e Git discutindo sua utilização combinada. Além disso, a palestra pretende incentivar a participação em projetos open source, uma ótima oportunidade para aprimorar habilidades, conhecer novas pessoas, perceber novas oportunidades e ampliar horizontes.
+												</div>
+											</td>
+											<td>Matheus Pereira</td>
+										</tr>
+										<tr>
+											<td><strong>15:00</strong></td>
+											<td>
+												<a href="#" class="trigger-modal">Porque Python é legal :D</a>
+												<div class="modal">Apresentação do mundo alternativo e legal do Python, um pouco de sua história e filosofia de vida ( The Zen of Python ), exemplos de trechos de código e provando porque o Python é Legal.</div>
+											</td>
+											<td>Joelmir Ribacki</td>
+										</tr>
+										<tr>
+											<td><strong>16:00</strong></td>
+											<td>
+												<a href="#" class="trigger-modal">Coding Dojo</a>
+												<div class="modal">Coding Dojo</div>
+											</td>
+											<td>Henrique Pereira</td>
+										</tr>
+										<tr>
+											<td><strong>16:30</strong></td>
+											<td>
+												<a href="#programacao">Encerramento e Sorteio</a>
+											</td>
+											<td></td>
+										</tr>
+									</tbody>	
+								</table>
+							</div>
+						</div>
+
+				</article>
+			</div>
+
+		<!-- Insncrições -->
+			<div class="wrapper wrapper-style4">
+				<article id="inscricoes">
+					<header>
+						<h2>Garanta agora sua vaga!</h2>
+					</header>
+					<div>
+						
+						<div class="row">
+							<div class="12u">
+								<div class="aviso">
+									<h3>Atenção</h3> 
+									<p style="margin-bottom: 0">A participação no evento é gratuita e as vagas são limitadas!</p>
+								</div>
+                                <iframe src="http://even.tc/pysm/embedded" frameborder="0" height="210px" style="background:#f9f9f9" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+							</div>
+						</div>
+						
+					</div>
+					<footer>
+						
+					</footer>
+				</article>
+			</div>
+
+		<!-- Patrocinadores -->
+			<div class="wrapper wrapper-style3">
+				<article id="patrocinadores">
+					<header>
+						<h2>Apoio</h2>
+					</header>					
+					<div class="row content-body">
+						<div class="4u">
+							<a href="http://www.unifra.br/"><img class="img-apoio" src="images/apoio/unifra.png"></a>	
+						</div>
+						<div class="4u">
+							<a href="http://pytche.org/"><img class="img-apoio" src="images/apoio/pytche.png"></a>
+						</div>
+						<div class="4u">
+							<a href="http://novatec.com.br/"><img class="img-apoio" src="images/apoio/novatec.png"></a>
+						</div>
+                    </div>
+                    <div class="row content-body">
+						<div class="2u">
+							&nbsp;
+						</div>
+						<div class="8u">
+							<a href="#" class="trigger-modal a-sua-logo">SUA LOGO AQUI</a>
+								<div class="modal">Mais informações pelo e-mail: contato@pysm.org</div>
+							</a>
+						</div>
+						
+						<div class="2u">
+							&nbsp;	
+                    	</div>
+                    </div>
+				</article>
+			</div>
+
+			<!-- Local -->
+			<div class="wrapper wrapper-style2">
+				<article id="local">
+					<header>
+						<h2>Local</h2>
+					</header>
+					<div class="container">
+						<div class="row">
+							<div class="12u">
+								<section class="box box-style2">
+									<h3>UNIFRA</h3>
+                                    <p>Rua Silva Jardim, 1322, 7º andar do Prédio 16, Conjunto 2</p>
+									<iframe width="640" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.br/maps?f=q&amp;source=s_q&amp;hl=pt-BR&amp;geocode=&amp;q=Rua+Silva+Jardim,+1322+santa+maria+rs&amp;aq=&amp;sll=-29.702709,-53.76275&amp;sspn=0.241851,0.528374&amp;ie=UTF8&amp;hq=&amp;hnear=Rua+Silva+Jardim,+1322+-+Nossa+Senhora+do+Ros%C3%A1rio,+Rio+Grande+do+Sul,+97010-491&amp;t=m&amp;z=14&amp;ll=-29.684061,-53.812989&amp;output=embed"></iframe>
+								</section>								
+							</div>							
+						</div>
+					</div>
+					<footer>
+						<p id="copyright">
+							&copy; 2014 <a href="http://pysm.org">PySM</a> | Design: <a href="http://html5up.net/">HTML5 UP</a> | Baseado no tema Miniport, por <a href="http://n33.co/">AJ</a> sob <a href="http://html5up.net/license/">licença CCA</a>.</p>
+						</p>
+					</footer>
+				</article>
+			</div>
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-49662634-1', 'pysm.org');
+	ga('send', 'pageview');
+	</script>
+	</body>
 </html>
-
